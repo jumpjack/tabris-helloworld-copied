@@ -1,20 +1,23 @@
-var page = tabris.create("Page", {
-  title: "Hello, World!",
-  topLevel: true
-});
+// For Tabris.js 3.8.0+
 
-var button = tabris.create("Button", {
-  text: "Native Widgets",
-  layoutData: {centerX: 0, top: 100}
-}).appendTo(page);
+import {Button, TextView, contentView} from 'tabris';
 
-var textView = tabris.create("TextView", {
-  font: "24px",
-  layoutData: {centerX: 0, top: [button, 50]}
-}).appendTo(page);
+var myStack = new Stack({
+  layoutData: "stretchX"
+  }
+);
 
-button.on("select", function() {
-  textView.set("text", "Totally Rock!");
-});
+var text1 = new TextInput({
+  message: 'text1'
+}).appendTo(myStack);
 
-page.open();
+var btn1 = new Button({
+ text: "Cliccami"
+}).onSelect(clicked)
+  .appendTo(myStack);
+
+
+function clicked() {
+ console.log("Clicked");
+  text1.text = "clicked";
+}
