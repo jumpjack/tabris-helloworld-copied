@@ -1,6 +1,6 @@
 {
-  "title": "Hello, World!",
-  "description": "Tabris.js - Hello, World!",
+  "title": "Ciao mondo package.json",
+  "description": "descrizione package.json",
   "category": "Small Apps",
   "main": "hello.js",
   "dependencies": {
