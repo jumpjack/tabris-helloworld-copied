@@ -3,7 +3,6 @@
   "description": "descrizione package.json",
   "category": "Small Apps",
   "main": "hello.js",
-  "type": "module",
   "dependencies": {
     "tabris": "^3.8.0"
   }  
